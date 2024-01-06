@@ -7,6 +7,7 @@ let cartP = document.querySelector(".cart-p");
 let deleteBtn = document.querySelector("#delete-btn");
 let checkBtn = document.querySelector("#checkout-btn");
 let cartCounter = document.querySelector("#cart-btn-counter");
+let menu = document.querySelector(".links")
 
 // viewer
 let mainViewer = document.querySelector(".viewer");
@@ -50,6 +51,7 @@ for (let i = 0; i < lbThumbnails.length; i++) {
 plusBtn.addEventListener("click", () => {
   if (amount <= 9) {
     amount += 1;
+    switchCart()
   }
   field.innerHTML = amount;
   cartCounter.innerHTML = amount;
@@ -57,6 +59,7 @@ plusBtn.addEventListener("click", () => {
 minusBtn.addEventListener("click", () => {
   if (amount >= 1) {
     amount -= 1;
+    switchCart()
   }
   field.innerHTML = amount;
   cartCounter.innerHTML = amount;
@@ -71,15 +74,7 @@ lbCloseBtn.addEventListener("click", () => {
 });
 
 addToCartBtn.addEventListener("click", () => {
-  if (amount != 0) {
-    emptyCart.style.display = "none";
-    filledCart.style.display = "flex";
-    cartP.innerHTML = `Fall limited edition sneakers $125 ×
-        <span> ${amount} <strong> $${amount * 125} </strong></span>`;
-  } else {
-    emptyCart.style.display = "flex";
-    filledCart.style.display = "none";
-  }
+  switchCart()
   cartNote.style.display = "flex";
 });
 deleteBtn.addEventListener("click", () => {
@@ -97,9 +92,34 @@ function reset() {
 
 // the thumbnail function
 function viewing(x, viewer, thumbnails) {
-  viewer.style.backgroundImage = `url('../images/image-product-${x + 1}.jpg')`;
+  viewer.style.backgroundImage = `url('images/image-product-${x + 1}.jpg')`;
   for (let j = 0; j < thumbnails.length; j++) {
     thumbnails[j].style.border = "none";
   }
   thumbnails[x].style.border = "3px solid var(--primary-color1)";
+}
+
+function menuBtnFunc(x) {
+  x.classList.toggle("change");
+  if(menu.style.width == "101.53px"){
+    menu.style.width = "0px"
+    menu.style.padding = "10px 0"
+  }else{
+    menu.style.width = "101.53px"
+    menu.style.padding = "10px"
+  }
+}
+
+
+
+function switchCart(){
+  if (amount != 0) {
+    emptyCart.style.display = "none";
+    filledCart.style.display = "flex";
+    cartP.innerHTML = `Fall limited edition sneakers $125 ×
+        <span> ${amount} <strong> $${amount * 125} </strong></span>`;
+  } else {
+    emptyCart.style.display = "flex";
+    filledCart.style.display = "none";
+  }
 }

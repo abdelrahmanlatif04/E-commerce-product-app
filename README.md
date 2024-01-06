@@ -26,7 +26,14 @@ Your users should be able to:
 
 ## what would be done in future 
 - Responsive design suitable for all sizes and shapes.
+- Fixeing all bugs & enhance the code writing
+## versions
+- ### v1.0
+- - desktop page & most of JS functions
 
+- ### v1.1
+- - Responsive design suitable for many devices
+- - fixing some bugs
 
 **Have fun using it!** 🚀
 [E-commerce product page](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6)
