@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Frontend Mentor | E-commerce product page</title>
+  </head>
+  <body>
+    <ul class="nav">
+      <li>
+        <img id="logo" src="images/logo.svg" />
+      </li>
+      <li>
+        <ul class="links">
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </li>
+      <li>
+        <button id="cart-btn"><div id="cart-btn-counter">0</div></button>
+        <div id="user-avatar"></div>
+      </li>
+      <li id="cart-note">
+        <div class="cart-title">Cart</div>
+        <hr />
+        <div class="empty-cart">your cart is empty fill it Now!!</div>
+        <div class="filled-cart">
+          <div class="row">
+            <img src="images/image-product-1-thumbnail.jpg" alt="" />
+            <p class="cart-p"></p>
+            <button id="delete-btn"></button>
+          </div>
+          <button id="checkout-btn">Checkout</button>
+        </div>
+      </li>
+    </ul>
+    <div class="container">
+      <div class="view-box">
+        <div class="viewer"></div>
+        <ul class="thumbnails">
+          <li
+            class="thumbnail"
+            style="background-image: url(images/image-product-1-thumbnail.jpg)"
+          ></li>
+          <li
+            class="thumbnail"
+            style="background-image: url(images/image-product-2-thumbnail.jpg)"
+          ></li>
+          <li
+            class="thumbnail"
+            style="background-image: url(images/image-product-3-thumbnail.jpg)"
+          ></li>
+          <li
+            class="thumbnail"
+            style="background-image: url(images/image-product-4-thumbnail.jpg)"
+          ></li>
+        </ul>
+      </div>
+      <div class="side">
+        <p class="seller">SNEAKER COMPANY</p>
+        <p class="title">Fall limited Edition Sneakers</p>
+        <p class="describtion">
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they'll withstand everything
+          the weather can offer
+        </p>
+        <div class="price">
+          <p class="after-price">$125.00</p>
+          <div class="discount">50%</div>
+        </div>
+        <div class="before-price">$250.00</div>
+        <div class="lower-row">
+          <div class="input">
+            <div class="minus"></div>
+            <div class="value"></div>
+            <div class="plus"></div>
+          </div>
+          <button id="add-to-cart-btn">
+            <img src="images/icon-cart-btn.svg" />
+            Add to cart
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="lb">
+      <div class="inner">
+        <div class="close-btn"></div>
+        <div class="lb-viewer"></div>
+        <ul class="lb-thumbnails">
+          <li
+            class="lb-thumbnail"
+            style="background-image: url(images/image-product-1-thumbnail.jpg)"
+          ></li>
+          <li
+            class="lb-thumbnail"
+            style="background-image: url(images/image-product-2-thumbnail.jpg)"
+          ></li>
+          <li
+            class="lb-thumbnail"
+            style="background-image: url(images/image-product-3-thumbnail.jpg)"
+          ></li>
+          <li
+            class="lb-thumbnail"
+            style="background-image: url(images/image-product-4-thumbnail.jpg)"
+          ></li>
+        </ul>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
