@@ -29,4 +29,5 @@ Your users should be able to:
 
 
 **Have fun using it!** 🚀
-[E-commerce product page](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6)
+
+-[The challenge page](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6)
