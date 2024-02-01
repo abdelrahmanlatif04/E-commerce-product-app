@@ -1,29 +1,29 @@
 // nav
-let cartBtn = document.querySelector("#cart-btn");
-let cartNote = document.querySelector("#cart-note");
-let emptyCart = document.querySelector(".empty-cart");
-let filledCart = document.querySelector(".filled-cart");
-let cartP = document.querySelector(".cart-p");
-let deleteBtn = document.querySelector("#delete-btn");
-let checkBtn = document.querySelector("#checkout-btn");
-let cartCounter = document.querySelector("#cart-btn-counter");
-let menu = document.querySelector(".links")
+const cartBtn = document.querySelector("#cart-btn");
+const cartNote = document.querySelector("#cart-note");
+const emptyCart = document.querySelector(".empty-cart");
+const filledCart = document.querySelector(".filled-cart");
+const cartP = document.querySelector(".cart-p");
+const deleteBtn = document.querySelector("#delete-btn");
+const checkBtn = document.querySelector("#checkout-btn");
+const cartCounter = document.querySelector("#cart-btn-counter");
+const menu = document.querySelector(".links")
 
 // viewer
-let mainViewer = document.querySelector(".viewer");
-let mainThumbnails = document.querySelectorAll(".thumbnail");
+const mainViewer = document.querySelector(".viewer");
+const mainThumbnails = document.querySelectorAll(".thumbnail");
 
 // lightbox
-let lightBox = document.querySelector(".lb");
-let lbCloseBtn = document.querySelector(".close-btn");
-let lbViewer = document.querySelector(".lb-viewer");
-let lbThumbnails = document.querySelectorAll(".lb-thumbnail");
+const lightBox = document.querySelector(".lb");
+const lbCloseBtn = document.querySelector(".close-btn");
+const lbViewer = document.querySelector(".lb-viewer");
+const lbThumbnails = document.querySelectorAll(".lb-thumbnail");
 // input field
-let plusBtn = document.querySelector(".plus");
-let minusBtn = document.querySelector(".minus");
-let field = document.querySelector(".value");
+const plusBtn = document.querySelector(".plus");
+const minusBtn = document.querySelector(".minus");
+const field = document.querySelector(".value");
 let amount = 0;
-let addToCartBtn = document.querySelector("#add-to-cart-btn");
+const addToCartBtn = document.querySelector("#add-to-cart-btn");
 field.innerHTML = amount;
 
 cartBtn.addEventListener("click", () => {
@@ -96,7 +96,7 @@ function viewing(x, viewer, thumbnails) {
   for (let j = 0; j < thumbnails.length; j++) {
     thumbnails[j].style.border = "none";
   }
-  thumbnails[x].style.border = "3px solid var(--primary-color1)";
+  thumbnails[x].style.border = "3px solid let(--primary-color1)";
 }
 
 function menuBtnFunc(x) {

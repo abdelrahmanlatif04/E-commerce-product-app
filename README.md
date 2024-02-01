@@ -15,25 +15,7 @@ Your users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
-- Open a lightbox gallery by clicking on the large product image
+- Open a light box gallery by clicking on the large product image
 - Switch the large product image by clicking on the small thumbnail images
 - Add items to the cart
 - View the cart and remove items from it
-
-
-## what is updates 
-- the initial design is ready & all functions are done too!
-
-## what would be done in future 
-- Responsive design suitable for all sizes and shapes.
-- Fixeing all bugs & enhance the code writing
-## versions
-- ### v1.0
-- - desktop page & most of JS functions
-
-- ### v1.1
-- - Responsive design suitable for many devices
-- - fixing some bugs
-
-**Have fun using it!** 🚀
-[E-commerce product page](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6)
